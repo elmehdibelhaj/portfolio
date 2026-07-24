@@ -1,12 +1,22 @@
-import { Container } from "@/components/layout";
+import { Container, Section } from "@/components/layout";
 import { Heading } from "@/components/ui";
+
+import { projects } from "@/data/projects.data";
+
+import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <section id="about" className="py-32">
+    <Section id="projects">
       <Container>
-        <Heading as="h2">Projects</Heading>
+        <Heading as="h2">Featured Projects</Heading>
+
+        <div className="mt-16 grid gap-8 lg:grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </Container>
-    </section>
+    </Section>
   );
 }
