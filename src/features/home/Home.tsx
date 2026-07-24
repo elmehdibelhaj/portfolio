@@ -1,4 +1,12 @@
-import { About, Contact, Experience, Hero, Projects, Skills } from "./index";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Projects,
+  Skills,
+  Footer,
+} from "./index";
 
 export function Home() {
   return (
@@ -9,6 +17,7 @@ export function Home() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </main>
   );
 }
