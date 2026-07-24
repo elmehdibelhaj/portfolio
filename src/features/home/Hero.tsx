@@ -7,7 +7,10 @@ export function Hero() {
   const { eyebrow, title, description, primaryAction, secondaryAction } = hero;
 
   return (
-    <section id="home" className="flex min-h-[calc(100vh-var(--navbar-height))] items-center">
+    <section
+      id="home"
+      className="flex min-h-[calc(100vh-var(--navbar-height))] items-center"
+    >
       <Container>
         <header className="max-w-2xl">
           {eyebrow && (
@@ -16,7 +19,7 @@ export function Hero() {
             </p>
           )}
 
-          <Heading>{title}</Heading>
+          <Heading as="h1">{title}</Heading>
 
           <Text size="lg" muted className="mt-10">
             {description}

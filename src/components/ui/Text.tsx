@@ -16,9 +16,20 @@ const variants = {
   lg: "text-lg leading-8",
 } satisfies Record<TextSize, string>;
 
-export function Text({ children, size = "md", muted = false, className }: TextProps) {
+export function Text({
+  children,
+  size = "md",
+  muted = false,
+  className,
+}: TextProps) {
   return (
-    <p className={cn(variants[size], muted ? "text-zinc-600" : "text-zinc-900", className)}>
+    <p
+      className={cn(
+        variants[size],
+        muted ? "text-zinc-600" : "text-zinc-900",
+        className,
+      )}
+    >
       {children}
     </p>
   );

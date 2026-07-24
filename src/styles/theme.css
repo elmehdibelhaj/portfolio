@@ -23,4 +23,7 @@
   --font-body-lg: 1.125rem;
   --font-body: 1rem;
   --font-small: 0.875rem;
+
+  /* Navbar */
+  --navbar-height: 5.5rem;
 }

@@ -1,4 +1,4 @@
-import type { HeroContent } from "@/types/content";
+import type { HeroContent } from "@/types/content/hero";
 
 export const hero: HeroContent = {
   eyebrow: "Senior Software Engineer",
