@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --background: #ffffff;
+  --foreground: #18181b;
+
+  --muted: #71717a;
+  --border: #e4e4e7;
+
+  --primary: #18181b;
+  --primary-foreground: #ffffff;
+
+  /* Layout */
+  --radius: 1rem;
+
+  /* Content widths */
+  --container: 80rem;
+
+  /* Navbar */
+  --navbar-height: 4.5rem;
+}
