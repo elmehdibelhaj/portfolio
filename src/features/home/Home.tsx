@@ -1,11 +1,9 @@
-import { Navbar } from "@/components/layout";
+import { Hero } from "./Hero";
 
 export function Home() {
   return (
-    <>
-      <Navbar />
-
-      <main>Coming soon...</main>
-    </>
+    <main>
+      <Hero />
+    </main>
   );
 }

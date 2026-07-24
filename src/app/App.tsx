@@ -1,5 +1,7 @@
 import { Home } from "@/features/home";
 
-export default function App() {
+function App() {
   return <Home />;
 }
+
+export default App;
