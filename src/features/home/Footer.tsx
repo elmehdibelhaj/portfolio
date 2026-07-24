@@ -3,10 +3,10 @@ import { Divider, Text } from "@/components/ui";
 
 export function Footer() {
   return (
-    <footer className="pb-10">
-      <Container>
-        <Divider />
+    <footer className="pt-8 pb-10">
+      <Divider />
 
+      <Container>
         <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
           <Text size="sm">© {new Date().getFullYear()} El Mehdi Belhaj.</Text>
 

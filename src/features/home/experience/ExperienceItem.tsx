@@ -19,9 +19,9 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
         {experience.period}
       </Text>
 
-      <Text className="mt-6">{experience.summary}</Text>
+      <Text className="mt-8">{experience.summary}</Text>
 
-      <ul className="mt-8 space-y-3">
+      <ul className="mt-8 space-y-4">
         {experience.highlights.map((highlight) => (
           <li key={highlight} className="flex items-start gap-3">
             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[color:var(--foreground)]" />
@@ -31,7 +31,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
         ))}
       </ul>
 
-      <div className="mt-8 flex flex-wrap gap-2">
+      <div className="mt-10 flex flex-wrap gap-2">
         {experience.technologies.map((technology) => (
           <Badge key={technology}>{technology}</Badge>
         ))}

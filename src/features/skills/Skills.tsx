@@ -11,7 +11,7 @@ export function Skills() {
       <Container>
         <Heading as="h2">Skills</Heading>
 
-        <div className="mt-16 grid gap-12 md:grid-cols-2">
+        <div className="mt-16 grid gap-x-12 gap-y-16 md:grid-cols-2">
           {skillGroups.map((group) => (
             <SkillGroup key={group.title} group={group} />
           ))}

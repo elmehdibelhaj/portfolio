@@ -10,11 +10,27 @@ export function NavItem({ href, children }: NavItemProps) {
     <a
       href={href}
       className="
-        text-sm
-        font-medium
-        text-[color:var(--foreground)]
+        relative
+        inline-block
+        cursor-pointer
         transition-colors
-        hover:text-[color:var(--muted)]
+        duration-200
+        ease-out
+
+        hover:text-[color:var(--accent)]
+
+        after:absolute
+        after:left-0
+        after:bottom-[-2px]
+        after:h-px
+        after:w-0
+        after:bg-[color:var(--accent)]
+        after:content-['']
+        after:transition-all
+        after:duration-200
+        after:ease-out
+
+        hover:after:w-full
       "
     >
       {children}

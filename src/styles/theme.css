@@ -5,6 +5,10 @@
   --muted: #71717a;
   --border: #e4e4e7;
 
+  /* Brand */
+  --accent: #4338ca;
+  --accent-foreground: #ffffff;
+
   /* Radius */
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
@@ -12,7 +16,7 @@
 
   /* Layout */
   --container: 80rem;
-  --navbar-height: 4.5rem;
+  --navbar-height: 5.5rem;
 
   /* Typography */
   --font-display: 4rem;
@@ -23,7 +27,4 @@
   --font-body-lg: 1.125rem;
   --font-body: 1rem;
   --font-small: 0.875rem;
-
-  /* Navbar */
-  --navbar-height: 5.5rem;
 }

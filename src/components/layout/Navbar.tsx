@@ -7,23 +7,21 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 h-[var(--navbar-height)] border-b border-[color:var(--border)] bg-white/90 backdrop-blur">
       <Container className="h-full">
-        <nav className="grid h-full grid-cols-[1fr_auto_1fr] items-center">
+        <nav className="flex h-full items-center justify-between">
           <a
             href="#home"
-            className="justify-self-start text-lg font-bold tracking-tight"
+            className="cursor-pointer text-lg font-bold tracking-tight transition-colors hover:text-[color:var(--accent)]"
           >
             El Mehdi.
           </a>
 
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="flex items-center gap-8">
             {navigation.map(({ href, label }) => (
               <li key={href}>
                 <NavItem href={href}>{label}</NavItem>
               </li>
             ))}
           </ul>
-
-          <div />
         </nav>
       </Container>
     </header>

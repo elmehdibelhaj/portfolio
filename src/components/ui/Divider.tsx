@@ -5,5 +5,12 @@ interface DividerProps {
 }
 
 export function Divider({ className }: DividerProps) {
-  return <hr className={cn("border-zinc-200", className)} />;
+  return (
+    <hr
+      className={cn(
+        "w-full border-0 border-t border-[color:var(--border)]",
+        className,
+      )}
+    />
+  );
 }

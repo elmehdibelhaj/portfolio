@@ -3,24 +3,26 @@ import { Button, Heading, Text } from "@/components/ui";
 
 import { contact } from "@/data/contact.data";
 
-import { SocialLink } from "./index";
+import { SocialLink } from "./SocialLink";
 
 export function Contact() {
   return (
     <Section id="contact">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <Heading as="h2">{contact.title}</Heading>
+          <Heading as="h2" className="mx-auto max-w-2xl">
+            {contact.title}
+          </Heading>
 
-          <Text className="mt-6">{contact.description}</Text>
+          <Text className="mx-auto mt-8 max-w-2xl">{contact.description}</Text>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-12 flex justify-center">
             <a href={`mailto:${contact.email}`}>
               <Button>Get In Touch</Button>
             </a>
           </div>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-8">
+          <div className="mt-16 flex flex-wrap justify-center gap-8">
             <SocialLink href={contact.linkedin}>LinkedIn</SocialLink>
             <SocialLink href={contact.github}>GitHub</SocialLink>
             <SocialLink href={contact.resume}>Resume</SocialLink>
