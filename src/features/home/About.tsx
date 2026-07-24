@@ -1,12 +1,21 @@
-import { Container } from "@/components/layout";
-import { Heading } from "@/components/ui";
+import { Container, Section } from "@/components/layout";
+import { Heading, Text } from "@/components/ui";
+
+import { about } from "@/data/about.data";
 
 export function About() {
   return (
-    <section id="about" className="py-32">
+    <Section id="about">
       <Container>
-        <Heading as="h2">About</Heading>
+        <div className="grid gap-16 lg:grid-cols-12">
+          <Heading as="h2">{about.title}</Heading>
+          <div className="mt-8 space-y-6">
+            {about.description.map((paragraph) => (
+              <Text key={paragraph}>{paragraph}</Text>
+            ))}
+          </div>
+        </div>
       </Container>
-    </section>
+    </Section>
   );
 }
