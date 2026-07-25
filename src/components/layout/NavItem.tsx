@@ -49,6 +49,7 @@ export function NavItem({
               hover:after:w-full
             `,
       )}
+      aria-current={active ? "page" : undefined}
     >
       {children}
     </a>

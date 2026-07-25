@@ -5,11 +5,13 @@ import { about } from "@/data/about.data";
 
 export function About() {
   return (
-    <Section id="about">
+    <Section id="about" aria-labelledby="about-title">
       <Container>
         <div className="grid gap-8 lg:gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Heading as="h2">{about.title}</Heading>
+            <Heading as="h2" id="about-title">
+              {about.title}
+            </Heading>
           </div>
 
           <div className="space-y-6 lg:col-span-8">

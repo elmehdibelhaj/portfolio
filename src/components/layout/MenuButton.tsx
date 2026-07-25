@@ -17,8 +17,14 @@ export function MenuButton({ isOpen, onClick }: MenuButtonProps) {
         transition-colors
         hover:bg-[color:var(--border)]
       "
+      aria-expanded={isOpen}
+      aria-controls="mobile-navigation"
     >
-      {isOpen ? <X size={22} /> : <Menu size={22} />}
+      {isOpen ? (
+        <X size={22} aria-hidden="true" />
+      ) : (
+        <Menu size={22} aria-hidden="true" />
+      )}
     </button>
   );
 }

@@ -5,8 +5,9 @@ function App() {
   return (
     <>
       <Navbar />
-
-      <Home />
+      <main id="main-content">
+        <Home />
+      </main>
     </>
   );
 }

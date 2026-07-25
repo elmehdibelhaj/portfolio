@@ -38,10 +38,12 @@ export function MobileNavigation({
           fixed inset-0 z-40 bg-[color:var(--overlay)] transition-opacity duration-300
           ${isOpen ? "opacity-100" : "pointer-events-none opacity-0"}
         `}
+        aria-hidden="true"
       />
 
       <div
         ref={ref}
+        inert={!isOpen ? true : false}
         className={`
           fixed
           left-0
@@ -61,7 +63,12 @@ export function MobileNavigation({
           }
         `}
       >
-        <nav className="px-5 py-6">
+        <nav
+          id="mobile-navigation"
+          className="px-5 py-6"
+          aria-label="Mobile navigation"
+          aria-hidden={!isOpen}
+        >
           <ul className="space-y-6">
             {navigation.map((item) => (
               <li key={item.href}>

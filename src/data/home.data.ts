@@ -15,6 +15,6 @@ export const hero: HeroContent = {
 
   secondaryAction: {
     label: "Download Resume",
-    href: "/resume.pdf",
+    href: "/El-Mehdi-Belhaj-resume.pdf",
   },
 };

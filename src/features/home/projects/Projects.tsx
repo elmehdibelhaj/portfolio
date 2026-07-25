@@ -7,9 +7,11 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <Section id="projects">
+    <Section id="projects" aria-labelledby="projects-title">
       <Container>
-        <Heading as="h2">Featured Projects</Heading>
+        <Heading id="projects-title" as="h2">
+          Featured Projects
+        </Heading>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {projects.map((project) => (

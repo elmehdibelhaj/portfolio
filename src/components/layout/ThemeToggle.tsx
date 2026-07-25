@@ -8,7 +8,6 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      aria-label="Toggle theme"
       className="
         cursor-pointer
         rounded-lg
@@ -16,8 +15,15 @@ export function ThemeToggle() {
         transition-colors
         hover:bg-[color:var(--border)]
       "
+      aria-label={
+        theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+      }
     >
-      {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+      {theme === "light" ? (
+        <Moon size={20} aria-hidden="true" />
+      ) : (
+        <Sun size={20} aria-hidden="true" />
+      )}
     </button>
   );
 }

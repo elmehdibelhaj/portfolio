@@ -7,9 +7,11 @@ import { SkillGroup } from "./SkillGroup";
 
 export function Skills() {
   return (
-    <Section id="skills">
+    <Section id="skills" aria-labelledby="skills-title">
       <Container>
-        <Heading as="h2">Skills</Heading>
+        <Heading id="skills-title" as="h2">
+          Skills
+        </Heading>
 
         <div className="mt-16 grid gap-x-12 gap-y-16 md:grid-cols-2">
           {skillGroups.map((group) => (

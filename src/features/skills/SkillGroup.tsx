@@ -9,7 +9,7 @@ interface SkillGroupProps {
 export function SkillGroup({ group }: SkillGroupProps) {
   return (
     <article>
-      <Heading as="h3" className="mb-6">
+      <Heading id="skill-group-title" as="h3" className="mb-6">
         {group.title}
       </Heading>
 
