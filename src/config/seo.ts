@@ -1,5 +1,5 @@
 export const seo = {
-  siteName: "El Mehdi Belhaj",
+  siteName: "El Mehdi BELHAJ",
 
   siteUrl: "https://ebelhaj.com",
 
@@ -8,7 +8,7 @@ export const seo = {
   type: "website",
 
   title:
-    "El Mehdi Belhaj | Senior Software Engineer | React, TypeScript, PHP & AWS",
+    "El Mehdi BELHAJ | Senior Software Engineer | React, TypeScript, PHP & AWS",
 
   description:
     "Senior Software Engineer with over 9 years of experience designing and building scalable web applications using React, TypeScript, JavaScript, PHP, Symfony and Laravel. Passionate about frontend architecture, cloud technologies, clean code and delivering exceptional user experiences.",
@@ -20,7 +20,7 @@ export const seo = {
   twitterHandle: "",
 
   person: {
-    name: "El Mehdi Belhaj",
+    name: "El Mehdi BELHAJ",
 
     jobTitle: "Senior Software Engineer",
 
