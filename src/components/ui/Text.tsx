@@ -12,8 +12,8 @@ interface TextProps {
 
 const variants = {
   sm: "text-sm leading-6",
-  md: "text-base leading-7",
-  lg: "text-lg leading-8",
+  md: "text-sm md:text-base leading-7 md:leading-8",
+  lg: "text-base md:text-lg leading-8 md:leading-9",
 } satisfies Record<TextSize, string>;
 
 export function Text({
@@ -26,7 +26,7 @@ export function Text({
     <p
       className={cn(
         variants[size],
-        muted ? "text-zinc-600" : "text-zinc-900",
+        muted ? "text-[color:var(--muted)]" : "text-[color:var(--foreground)]",
         className,
       )}
     >

@@ -15,7 +15,13 @@ export function Navbar() {
             El Mehdi.
           </a>
 
-          <ul className="flex items-center gap-8">
+          <ul className="hidden items-center gap-8 md:flex">
+            <button
+              className="md:hidden cursor-pointer rounded-md p-2 transition-colors hover:bg-[color:var(--border)]"
+              aria-label="Open navigation"
+            >
+              ☰
+            </button>
             {navigation.map(({ href, label }) => (
               <li key={href}>
                 <NavItem href={href}>{label}</NavItem>

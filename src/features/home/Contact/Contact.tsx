@@ -16,7 +16,7 @@ export function Contact() {
 
           <Text className="mx-auto mt-8 max-w-2xl">{contact.description}</Text>
 
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12 flex justify-center w-full sm:w-auto">
             <a href={`mailto:${contact.email}`}>
               <Button>Get In Touch</Button>
             </a>

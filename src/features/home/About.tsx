@@ -7,7 +7,7 @@ export function About() {
   return (
     <Section id="about">
       <Container>
-        <div className="grid gap-12 lg:grid-cols-12">
+        <div className="grid gap-8 lg:gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Heading as="h2">{about.title}</Heading>
           </div>

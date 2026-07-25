@@ -12,7 +12,7 @@ export function Hero() {
       className="flex min-h-[calc(100vh-var(--navbar-height))] items-center"
     >
       <Container>
-        <header className="max-w-2xl">
+        <header className="max-w-xl lg:max-w-2xl">
           {eyebrow && (
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
               {eyebrow}
@@ -25,10 +25,11 @@ export function Hero() {
             {description}
           </Text>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button>{primaryAction.label}</Button>
-
-            <Button variant="secondary">{secondaryAction.label}</Button>
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <Button className="w-full sm:w-auto">{primaryAction.label}</Button>
+            <Button variant="secondary" className="w-full sm:w-auto">
+              {secondaryAction.label}
+            </Button>
           </div>
         </header>
       </Container>

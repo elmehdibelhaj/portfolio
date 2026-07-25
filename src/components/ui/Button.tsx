@@ -40,7 +40,7 @@ export function Button({
   return (
     <button
       className={[
-        "inline-flex cursor-pointer items-center justify-center rounded-xl px-6 py-3",
+        "inline-flex cursor-pointer items-center justify-center rounded-xl px-7 py-3",
         "text-sm font-medium transition-colors duration-300 ease-in-out",
         "focus-visible:outline-none focus-visible:ring-2",
         variants[variant],

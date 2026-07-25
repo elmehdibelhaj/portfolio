@@ -11,9 +11,9 @@ interface HeadingProps {
 }
 
 const variants = {
-  h1: "text-5xl font-bold tracking-tight text-[color:var(--foreground)] md:text-7xl",
-  h2: "text-4xl font-bold tracking-tight text-[color:var(--foreground)]",
-  h3: "text-2xl font-semibold tracking-tight text-[color:var(--foreground)]",
+  h1: "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[color:var(--foreground)]",
+  h2: "text-3xl sm:text-4xl font-bold tracking-tight text-[color:var(--foreground)]",
+  h3: "text-xl sm:text-2xl font-semibold tracking-tight text-[color:var(--foreground)]",
 } satisfies Record<HeadingElement, string>;
 
 export function Heading({ as = "h1", children, className }: HeadingProps) {
