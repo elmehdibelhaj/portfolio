@@ -3,9 +3,11 @@ import { MenuButton } from "./MenuButton";
 import { MobileNavigation } from "./MobileNavigation";
 import { Container } from "./Container";
 import { useMobileMenu } from "../../hooks/useMobileMenu";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export function Navbar() {
   const { isOpen, toggle, close } = useMobileMenu();
+  const activeSection = useActiveSection();
 
   return (
     <>
@@ -19,14 +21,18 @@ export function Navbar() {
               El Mehdi.
             </a>
 
-            <DesktopNavigation />
+            <DesktopNavigation activeSection={activeSection} />
 
             <MenuButton isOpen={isOpen} onClick={toggle} />
           </nav>
         </Container>
       </header>
 
-      <MobileNavigation isOpen={isOpen} onClose={close} />
+      <MobileNavigation
+        isOpen={isOpen}
+        onClose={close}
+        activeSection={activeSection}
+      />
     </>
   );
 }
