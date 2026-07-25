@@ -9,26 +9,21 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<Variant, string> = {
   primary: `
-      bg-[color:var(--foreground)]
-      text-white
-
-      hover:bg-[color:var(--accent)]
-
-      focus-visible:ring-[color:var(--accent)]
-    `,
+    bg-[color:var(--accent)]
+    text-[color:var(--accent-foreground)]
+    hover:bg-[color:var(--accent-hover)]
+    focus-visible:ring-[color:var(--focus-ring)]
+  `,
 
   secondary: `
-      border
-      border-[color:var(--border)]
-
-      bg-white
-      text-[color:var(--foreground)]
-
-      hover:border-[color:var(--accent)]
-      hover:text-[color:var(--accent)]
-
-      focus-visible:ring-[color:var(--accent)]
-    `,
+    border
+    border-[color:var(--border)]
+    bg-[color:var(--button-secondary-background)]
+    text-[color:var(--button-secondary-foreground)]
+    hover:border-[color:var(--accent)]
+    hover:text-[color:var(--accent)]
+    focus-visible:ring-[color:var(--focus-ring)]
+  `,
 };
 
 export function Button({

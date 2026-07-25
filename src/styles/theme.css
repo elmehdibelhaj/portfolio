@@ -1,24 +1,64 @@
 :root {
-  /* Colors */
+  /* ==========================================================================
+     Primitive Colors
+     ========================================================================== */
+
   --background: #ffffff;
   --foreground: #18181b;
   --muted: #71717a;
   --border: #e4e4e7;
 
-  /* Brand */
-  --accent: #4338ca;
+  /* ==========================================================================
+     Brand
+     ========================================================================== */
+
+  --accent: #0ceaab;
+  --accent-hover: #2bc196;
   --accent-foreground: #ffffff;
 
-  /* Radius */
+  /* ==========================================================================
+     Semantic Colors
+     ========================================================================== */
+
+  /* Surfaces */
+  --surface: rgb(255 255 255 / 0.9);
+  --surface-hover: #f4f4f5;
+  --card: #ffffff;
+
+  /* Buttons */
+  --button-secondary-background: transparent;
+  --button-secondary-foreground: var(--foreground);
+
+  /* Badges */
+  --badge-background: #f4f4f5;
+  --badge-foreground: #3f3f46;
+
+  /* Misc */
+  --overlay: rgb(0 0 0 / 0.2);
+  --focus-ring: var(--accent);
+
+  --selection-background: var(--accent);
+  --selection-foreground: var(--accent-foreground);
+
+  /* ==========================================================================
+     Radius
+     ========================================================================== */
+
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
 
-  /* Layout */
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+
   --container: 80rem;
   --navbar-height: 5.5rem;
 
-  /* Typography */
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+
   --font-display: 4rem;
   --font-h1: 3rem;
   --font-h2: 2.25rem;
@@ -27,4 +67,47 @@
   --font-body-lg: 1.125rem;
   --font-body: 1rem;
   --font-small: 0.875rem;
+}
+
+[data-theme="dark"] {
+  /* ==========================================================================
+     Primitive Colors
+     ========================================================================== */
+
+  --background: #09090b;
+  --foreground: #fafafa;
+  --muted: #a1a1aa;
+  --border: #27272a;
+
+  /* ==========================================================================
+     Brand
+     ========================================================================== */
+
+  --accent: #047857;
+  --accent-hover: #065f46;
+  --accent-foreground: #ffffff;
+
+  /* ==========================================================================
+     Semantic Colors
+     ========================================================================== */
+
+  /* Surfaces */
+  --surface: rgb(9 9 11 / 0.9);
+  --surface-hover: #18181b;
+  --card: #09090b;
+
+  /* Buttons */
+  --button-secondary-background: transparent;
+  --button-secondary-foreground: var(--foreground);
+
+  /* Badges */
+  --badge-background: #27272a;
+  --badge-foreground: #e4e4e7;
+
+  /* Misc */
+  --overlay: rgb(0 0 0 / 0.5);
+  --focus-ring: var(--accent);
+
+  --selection-background: var(--accent);
+  --selection-foreground: var(--accent-foreground);
 }

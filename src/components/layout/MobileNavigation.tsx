@@ -35,7 +35,7 @@ export function MobileNavigation({
     <>
       <div
         className={`
-          fixed inset-0 z-40 bg-black/20 transition-opacity duration-300
+          fixed inset-0 z-40 bg-[color:var(--overlay)] transition-opacity duration-300
           ${isOpen ? "opacity-100" : "pointer-events-none opacity-0"}
         `}
       />
@@ -50,7 +50,7 @@ export function MobileNavigation({
           z-50
           border-b
           border-[color:var(--border)]
-          bg-white
+          bg-[color:var(--surface)]
           transition-all
           duration-300
 

@@ -7,6 +7,19 @@
     <title>portfolio</title>
   </head>
   <body>
+    <script>
+      (() => {
+        const stored = localStorage.getItem("theme");
+
+        const theme =
+          stored ??
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
