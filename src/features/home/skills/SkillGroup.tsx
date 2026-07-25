@@ -1,6 +1,6 @@
 import { Badge, Heading } from "@/components/ui";
-
 import type { SkillGroup as SkillGroupType } from "@/types/content/skill";
+import { motion } from "motion/react";
 
 interface SkillGroupProps {
   group: SkillGroupType;
@@ -8,7 +8,14 @@ interface SkillGroupProps {
 
 export function SkillGroup({ group }: SkillGroupProps) {
   return (
-    <article>
+    <motion.article
+      whileHover={{
+        y: -2,
+      }}
+      transition={{
+        duration: 0.2,
+      }}
+    >
       <Heading id="skill-group-title" as="h3" className="mb-6">
         {group.title}
       </Heading>
@@ -18,6 +25,6 @@ export function SkillGroup({ group }: SkillGroupProps) {
           <Badge key={skill}>{skill}</Badge>
         ))}
       </div>
-    </article>
+    </motion.article>
   );
 }

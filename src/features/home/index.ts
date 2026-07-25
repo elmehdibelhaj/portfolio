@@ -3,6 +3,6 @@ export * from "./Hero";
 export * from "./About";
 export * from "./experience/Experience";
 export * from "./projects/Projects";
-export * from "../skills/Skills";
+export * from "./skills/Skills";
 export * from "./contact/Contact";
 export * from "./Footer";

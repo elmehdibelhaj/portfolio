@@ -1,4 +1,5 @@
 import { Container, Section } from "@/components/layout";
+import { FadeUp, Stagger } from "@/components/motion";
 import { Heading, Text } from "@/components/ui";
 
 import { about } from "@/data/about.data";
@@ -7,18 +8,22 @@ export function About() {
   return (
     <Section id="about" aria-labelledby="about-title">
       <Container>
-        <div className="grid gap-8 lg:gap-12 lg:grid-cols-12">
+        <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-4">
-            <Heading as="h2" id="about-title">
-              {about.title}
-            </Heading>
+            <FadeUp>
+              <Heading as="h2" id="about-title">
+                {about.title}
+              </Heading>
+            </FadeUp>
           </div>
 
-          <div className="space-y-6 lg:col-span-8">
+          <Stagger className="space-y-6 lg:col-span-8">
             {about.description.map((paragraph) => (
-              <Text key={paragraph}>{paragraph}</Text>
+              <FadeUp key={paragraph}>
+                <Text>{paragraph}</Text>
+              </FadeUp>
             ))}
-          </div>
+          </Stagger>
         </div>
       </Container>
     </Section>

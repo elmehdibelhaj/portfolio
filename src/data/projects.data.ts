@@ -2,6 +2,7 @@ import type { Project } from "@/types/content/project";
 
 export const projects: Project[] = [
   {
+    id: "ELMS-1",
     title: "Enterprise Learning Management System",
 
     description:
@@ -20,6 +21,7 @@ export const projects: Project[] = [
   },
 
   {
+    id: "DP-2",
     title: "Developer Portfolio",
 
     description:
@@ -40,6 +42,7 @@ export const projects: Project[] = [
   },
 
   {
+    id: "ESP-3",
     title: "Enterprise SharePoint Platform",
 
     description:

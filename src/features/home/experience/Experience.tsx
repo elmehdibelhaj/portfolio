@@ -4,6 +4,7 @@ import { Heading } from "@/components/ui";
 import { experiences } from "@/data/experience.data";
 
 import { ExperienceItem } from "./ExperienceItem";
+import { FadeUp, Stagger } from "@/components/motion";
 
 export function Experience() {
   return (
@@ -14,14 +15,13 @@ export function Experience() {
             Experience
           </Heading>
 
-          <div className="mt-16 space-y-16">
+          <Stagger className="mt-16 space-y-16">
             {experiences.map((experience) => (
-              <ExperienceItem
-                key={`${experience.company}-${experience.role}`}
-                experience={experience}
-              />
+              <FadeUp key={`${experience.company}-${experience.role}`}>
+                <ExperienceItem experience={experience} />
+              </FadeUp>
             ))}
-          </div>
+          </Stagger>
         </div>
       </Container>
     </Section>

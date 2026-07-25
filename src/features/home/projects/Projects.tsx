@@ -4,6 +4,7 @@ import { Heading } from "@/components/ui";
 import { projects } from "@/data/projects.data";
 
 import { ProjectCard } from "./ProjectCard";
+import { FadeUp, Stagger } from "@/components/motion";
 
 export function Projects() {
   return (
@@ -13,11 +14,13 @@ export function Projects() {
           Featured Projects
         </Heading>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
+        <Stagger className="mt-16 grid gap-8 lg:grid-cols-2">
           {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+            <FadeUp key={project.id}>
+              <ProjectCard project={project} />
+            </FadeUp>
           ))}
-        </div>
+        </Stagger>
       </Container>
     </Section>
   );

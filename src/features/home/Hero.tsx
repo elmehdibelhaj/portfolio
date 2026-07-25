@@ -1,7 +1,11 @@
+import { motion } from "motion/react";
+
 import { hero } from "@/data/home.data";
 
 import { Container } from "@/components/layout";
 import { Button, Heading, Text } from "@/components/ui";
+
+import { fadeUp, staggerContainer } from "@/lib/motion";
 
 export function Hero() {
   const { eyebrow, title, description, primaryAction, secondaryAction } = hero;
@@ -13,22 +17,37 @@ export function Hero() {
       aria-labelledby="hero-title"
     >
       <Container>
-        <header className="max-w-xl lg:max-w-2xl">
+        <motion.header
+          className="max-w-xl lg:max-w-2xl"
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+        >
           {eyebrow && (
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
+            <motion.p
+              variants={fadeUp}
+              className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]"
+            >
               {eyebrow}
-            </p>
+            </motion.p>
           )}
 
-          <Heading as="h1" id="hero-title">
-            {title}
-          </Heading>
+          <motion.div variants={fadeUp}>
+            <Heading as="h1" id="hero-title">
+              {title}
+            </Heading>
+          </motion.div>
 
-          <Text size="lg" muted className="mt-10">
-            {description}
-          </Text>
+          <motion.div variants={fadeUp}>
+            <Text size="lg" muted className="mt-10">
+              {description}
+            </Text>
+          </motion.div>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <motion.div
+            variants={fadeUp}
+            className="mt-10 flex flex-col gap-4 sm:flex-row"
+          >
             <Button
               as="a"
               href={primaryAction.href}
@@ -47,8 +66,8 @@ export function Hero() {
             >
               {secondaryAction.label}
             </Button>
-          </div>
-        </header>
+          </motion.div>
+        </motion.header>
       </Container>
     </section>
   );
