@@ -3,12 +3,14 @@ import type { ReactNode } from "react";
 interface NavItemProps {
   href: string;
   children: ReactNode;
+  onClick?: () => void;
 }
 
-export function NavItem({ href, children }: NavItemProps) {
+export function NavItem({ href, children, onClick }: NavItemProps) {
   return (
     <a
       href={href}
+      onClick={onClick}
       className="
         relative
         inline-block
@@ -16,9 +18,7 @@ export function NavItem({ href, children }: NavItemProps) {
         transition-colors
         duration-200
         ease-out
-
         hover:text-[color:var(--accent)]
-
         after:absolute
         after:left-0
         after:bottom-[-2px]
@@ -29,7 +29,6 @@ export function NavItem({ href, children }: NavItemProps) {
         after:transition-all
         after:duration-200
         after:ease-out
-
         hover:after:w-full
       "
     >
