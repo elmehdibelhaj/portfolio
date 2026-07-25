@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/layout";
-import { Home } from "@/features/home";
+import { Home } from "@/components/features/home";
 
 function App() {
   return (

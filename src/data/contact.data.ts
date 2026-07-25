@@ -6,7 +6,7 @@ export const contact: Contact = {
   description:
     "I'm currently open to Senior Frontend and Full Stack Software Engineering opportunities. If you're building products at scale or solving interesting engineering problems, I'd love to hear from you.",
 
-  email: "ebelhaaj@gmail.com",
+  email: "contact@ebelhaj.com",
 
   linkedin: "https://linkedin.com/in/ebelhaj",
 
