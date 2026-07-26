@@ -36,7 +36,7 @@ export const projects: Project[] = [
 
     technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
 
-    github: "#",
+    github: "https://github.com/elmehdibelhaj/portfolio",
 
     featured: true,
   },
