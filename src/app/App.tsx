@@ -1,5 +1,7 @@
 import { Navbar } from "@/components/layout";
 import { Home } from "@/components/features/home";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <main id="main-content">
         <Home />
       </main>
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }

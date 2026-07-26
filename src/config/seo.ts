@@ -15,9 +15,7 @@ export const seo = {
 
   image: "/og-image.png",
 
-  twitter: "",
-
-  twitterHandle: "",
+  twitter: "summary_large_image",
 
   person: {
     name: "El Mehdi BELHAJ",
