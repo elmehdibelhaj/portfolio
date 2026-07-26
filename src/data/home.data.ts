@@ -3,10 +3,10 @@ import type { HeroContent } from "@/types/content/hero";
 export const hero: HeroContent = {
   eyebrow: "Senior Software Engineer",
 
-  title: "Building scalable enterprise applications.",
+  title: "Turning complex problems into simple, scalable software.",
 
   description:
-    "Software engineer with 9+ years of experience designing and delivering enterprise solutions across finance, retail, and digital transformation projects for global organizations including Deloitte and Globant.",
+    "Senior Software Engineer with 9+ years of experience designing and building enterprise web applications using React, TypeScript, Symfony and Laravel. Passionate about clean architecture, accessible user experiences and software that stands the test of time.",
 
   primaryAction: {
     label: "View Projects",

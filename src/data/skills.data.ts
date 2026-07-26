@@ -18,42 +18,48 @@ export const skillGroups: SkillGroup[] = [
   },
 
   {
+    title: "Architecture",
+
+    skills: [
+      "Component Architecture",
+      "Design Systems",
+      "Monorepo Architecture",
+      "Responsive Design",
+      "Accessibility (WCAG)",
+      "Performance Optimization",
+      "SEO",
+    ],
+  },
+
+  {
     title: "Backend",
 
     skills: ["PHP", "Symfony", "Laravel", "REST APIs", "SQL", "MySQL"],
   },
 
   {
-    title: "Architecture",
+    title: "DevOps & Engineering",
 
     skills: [
-      "Component Architecture",
-      "Design Systems",
-      "Monorepo",
-      "Accessibility",
-      "Performance",
-      "SEO",
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "CI/CD",
+      "Agile",
+      "Scrum",
+      "AWS Cloud Practitioner",
     ],
   },
 
   {
     title: "Testing",
 
-    skills: ["Jest", "React Testing Library", "TDD"],
+    skills: ["Jest", "React Testing Library", "Test-Driven Development"],
   },
 
   {
     title: "Tools",
 
-    skills: [
-      "Git",
-      "GitHub",
-      "Bitbucket",
-      "Vite",
-      "Webpack",
-      "Figma",
-      "AWS",
-      "SharePoint",
-    ],
+    skills: ["Vite", "Webpack", "Figma", "SharePoint Online", "UiPath"],
   },
 ];

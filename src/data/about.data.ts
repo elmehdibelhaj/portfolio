@@ -4,10 +4,10 @@ export const about: About = {
   title: "About Me",
 
   description: [
-    "I'm a Senior Software Engineer with over 9 years of experience designing and developing enterprise web applications across frontend and backend technologies.",
+    "I'm a Senior Software Engineer with over 9 years of experience designing and developing enterprise web applications across modern frontend and backend technologies.",
 
-    "Throughout my career at Deloitte and Globant, I've helped modernize legacy systems, build scalable React applications, and deliver maintainable software used by hundreds of thousands of users.",
+    "Throughout my career at Deloitte and Globant, I've helped modernize legacy platforms, build scalable React applications, and deliver software used by hundreds of thousands of users while collaborating with international engineering teams.",
 
-    "I enjoy building clean architectures, creating reusable component systems, improving accessibility and performance, and continuously learning new technologies to become a better engineer every day.",
+    "I enjoy solving complex engineering challenges through clean architecture, reusable component systems, accessibility, performance optimization, and continuous learning. My goal is always to build software that is maintainable, reliable, and enjoyable to use.",
   ],
 };

@@ -8,16 +8,16 @@ export const experiences: ExperienceEntry[] = [
     location: "Casablanca, Morocco",
 
     summary:
-      "Designing and developing scalable enterprise Learning Management Systems using React, TypeScript and Symfony while contributing to a shared monorepo architecture.",
+      "Designing and building scalable enterprise Learning Management Systems using React, TypeScript and Symfony while contributing to a shared component architecture across multiple applications.",
 
     highlights: [
-      "Designed and developed enterprise React applications supporting complex learning workflows.",
-      "Migrated legacy PHP/Twig interfaces to React using the Cegid Design System.",
-      "Built reusable shared packages within a monorepo architecture.",
-      "Developed AI-powered reporting with interactive visualizations and PDF exports.",
-      "Integrated REST APIs between React frontends and Symfony services.",
-      "Improved accessibility with WCAG-compliant interfaces reaching accessibility scores up to 98%.",
-      "Implemented automated testing using Jest and React Testing Library.",
+      "Built enterprise React applications supporting complex learning and evaluation workflows.",
+      "Modernized legacy PHP/Twig interfaces by migrating them to React using the Cegid Design System.",
+      "Developed reusable packages within a shared monorepo architecture to improve consistency and maintainability.",
+      "Implemented AI-powered reporting features with interactive visualizations and PDF exports.",
+      "Integrated React frontends with Symfony REST APIs across multiple business domains.",
+      "Improved accessibility by implementing WCAG-compliant interfaces, achieving accessibility scores up to 98%.",
+      "Improved software quality through automated testing with Jest and React Testing Library.",
     ],
 
     technologies: [
@@ -41,16 +41,16 @@ export const experiences: ExperienceEntry[] = [
     location: "Casablanca, Morocco",
 
     summary:
-      "Designed, modernized and maintained enterprise applications for international clients across frontend and backend technologies.",
+      "Designed, modernized and maintained enterprise web applications for international clients using modern frontend technologies and PHP-based backend solutions.",
 
     highlights: [
-      "Built enterprise solutions using React, Vue.js, Laravel and PHP.",
-      "Modernized legacy applications with React and Vue.js architectures.",
-      "Developed applications using Vue 3, Pinia and Vite.",
-      "Built SharePoint Online solutions serving more than 412,000 daily users.",
-      "Established Git workflows and code review practices reducing merge conflicts.",
-      "Automated internal business processes using UiPath.",
-      "Improved Lighthouse scores from 66 to 97 through performance optimization.",
+      "Developed enterprise applications using React, Vue.js, Laravel and PHP.",
+      "Modernized legacy platforms by introducing reusable React and Vue.js architectures.",
+      "Built Vue 3 applications using Pinia and Vite for improved maintainability and developer experience.",
+      "Delivered SharePoint Online solutions supporting more than 412,000 daily users.",
+      "Introduced Git workflows and code review practices that improved collaboration across development teams.",
+      "Automated internal business processes using UiPath, reducing repetitive manual work.",
+      "Improved Lighthouse scores from 66 to 97 through frontend performance optimization and SEO best practices.",
     ],
 
     technologies: [
