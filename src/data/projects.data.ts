@@ -56,4 +56,37 @@ export const projects: Project[] = [
 
     technologies: ["React", "SharePoint", "PHP", "SQL"],
   },
+
+  {
+    id: "CA-4",
+    title: "GitHub Authentication with Convex",
+
+    description:
+      "Small Next.js project built to explore GitHub authentication, reactive data, and Convex's real-time data model.",
+
+    highlights: [
+      "Implemented GitHub OAuth authentication with Convex Auth.",
+      "Stored authenticated user data in the Convex users table.",
+      "Built reactive Convex queries to update the UI automatically.",
+      "Stored connection status directly in the user document.",
+      "Displayed authenticated GitHub avatar, name, and email.",
+      "Implemented sign-in and sign-out flows.",
+    ],
+
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Convex",
+      "Convex Auth",
+      "GitHub OAuth",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Bun",
+    ],
+
+    github: "https://github.com/elmehdibelhaj/convex-github-auth",
+
+    featured: true,
+  },
 ];
