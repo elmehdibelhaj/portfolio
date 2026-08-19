@@ -13,8 +13,7 @@ export const experiences: ExperienceEntry[] = [
     highlights: [
       "Built enterprise React applications supporting complex learning and evaluation workflows.",
       "Modernized legacy PHP/Twig interfaces by migrating them to React using the Cegid Design System.",
-      "Developed reusable packages within a shared monorepo architecture to improve consistency and maintainability.",
-      "Implemented AI-powered reporting features with interactive visualizations and PDF exports.",
+      "Integrated AI-powered reporting capabilities and collaborated with backend teams on prompt design, output requirements, and frontend presentation.",
       "Integrated React frontends with Symfony REST APIs across multiple business domains.",
       "Improved accessibility by implementing WCAG-compliant interfaces, achieving accessibility scores up to 98%.",
       "Improved software quality through automated testing with Jest and React Testing Library.",
@@ -47,10 +46,10 @@ export const experiences: ExperienceEntry[] = [
       "Developed enterprise applications using React, Vue.js, Laravel and PHP.",
       "Modernized legacy platforms by introducing reusable React and Vue.js architectures.",
       "Built Vue 3 applications using Pinia and Vite for improved maintainability and developer experience.",
-      "Delivered SharePoint Online solutions supporting more than 412,000 daily users.",
+      "Delivered SharePoint Online solutions supporting more than 450,000 daily users.",
       "Introduced Git workflows and code review practices that improved collaboration across development teams.",
       "Automated internal business processes using UiPath, reducing repetitive manual work.",
-      "Improved Lighthouse scores from 66 to 97 through frontend performance optimization and SEO best practices.",
+      "Improved Lighthouse performance scores from 66 to 97 through frontend performance and optimization work.",
     ],
 
     technologies: [
