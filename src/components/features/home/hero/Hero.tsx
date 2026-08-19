@@ -14,10 +14,10 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-var(--navbar-height))] flex-col"
       aria-labelledby="hero-title"
+      className="hero-section"
     >
-      <Container className="flex flex-1 items-center pt-16">
+      <Container className="relative z-10 flex flex-1 items-center pt-12">
         <motion.header
           className="max-w-xl lg:max-w-2xl"
           variants={staggerContainer}
@@ -70,6 +70,7 @@ export function Hero() {
           </motion.div>
         </motion.header>
       </Container>
+
       <TrustedBy />
     </section>
   );
