@@ -48,6 +48,7 @@ html {
   scroll-behavior: smooth;
   color-scheme: light dark;
 }
+
 body {
   font-family:
     "Inter",
@@ -110,5 +111,50 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+.trusted-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 200ms ease;
+}
+
+.trusted-logo {
+  display: block;
+  width: auto;
+  height: 28px;
+  opacity: 0.6;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.trusted-logo-light {
+  display: block;
+}
+
+.trusted-logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .trusted-logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .trusted-logo-dark {
+  display: block;
+}
+
+.trusted-company:hover .trusted-logo {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trusted-company,
+  .trusted-logo {
+    transition: none;
   }
 }

@@ -6,6 +6,7 @@ import { Container } from "@/components/layout";
 import { Button, Heading, Text } from "@/components/ui";
 
 import { fadeUp, staggerContainer } from "@/lib/motion";
+import { TrustedBy } from "../social-proof";
 
 export function Hero() {
   const { eyebrow, title, description, primaryAction, secondaryAction } = hero;
@@ -13,10 +14,10 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-var(--navbar-height))] items-center"
+      className="flex min-h-[calc(100vh-var(--navbar-height))] flex-col"
       aria-labelledby="hero-title"
     >
-      <Container>
+      <Container className="flex flex-1 items-center pt-16">
         <motion.header
           className="max-w-xl lg:max-w-2xl"
           variants={staggerContainer}
@@ -69,6 +70,7 @@ export function Hero() {
           </motion.div>
         </motion.header>
       </Container>
+      <TrustedBy />
     </section>
   );
 }
